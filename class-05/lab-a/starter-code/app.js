@@ -53,31 +53,21 @@ IMPORTANT DETAIL: You may not use the arithmetic ' operators + and * in this fun
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-//function sumAndMultiply(c, d, e) { //eslint-disable-line
- // var add2 = sum(c,d);
-  //var add3 = sum(add2,e);
-  //console.log(add2);
-  //var string2 = a + ' and ' + b + ' and ' + c + " sum to " + add3 + '.';
-  //var multiply2 = multiply(a,b);
-  //var multiply3 = multiply(multiply2,c);
-  //var string3 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply3 +'.';
-  //var sumAndMultiplyOutputt = [add3, multiply3,string2,string3];
-  
-//}
+
 function sumAndMultiply(a,b,c) {
   var addtwo = sum(a,b)
-  console.log(addtwo);
+  //console.log(addtwo);
   var addThree = sum(addtwo[0],c);
-  console.log(addThree);
+  //console.log(addThree);
   var multiplyTwo = multiply(a,b);
-  console.log(multiplyTwo);
+  //console.log(multiplyTwo);
   var multiplyThree = multiply(multiplyTwo[0],c);
-  console.log(multiplyThree);
+  //console.log(multiplyThree);
   var stringAdd = a + ' and ' + b + ' and ' + c + ' sum to ' + addThree[0] + '.';
-  console.log(stringAdd); 
+  //console.log(stringAdd); 
   var stringMultiply = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyThree[0] + '.'
   var sumAndMultiplyOutput = [addThree[0],multiplyThree[0],stringAdd,stringMultiply]
-  console.log(sumAndMultiplyOutput)
+  //console.log(sumAndMultiplyOutput)
   return sumAndMultiplyOutput
 }
 
