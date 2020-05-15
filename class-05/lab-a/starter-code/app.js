@@ -79,9 +79,15 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 // var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
 
+function sumArray(sumArr) { //eslint-disable-line
+  var sumArr = [a, b, c];
+  var sumArrString = (sumArr + ' was just passed in as an array of numbers. Their sum is ' + sum(sumArr));
+  sum(sumArr);
+  return[sumArr, sumArrString];
 }
+
+sumArray(2, 3, 4);
 
 // Here is the test for sumArray(); uncomment it to run it
 
